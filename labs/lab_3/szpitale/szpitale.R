@@ -1,0 +1,10 @@
+outcome <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+head(outcome)
+
+ncol(outcome)
+nrow(outcome)
+names(outcome)
+
+outcome[, 11] <- as.numeric(outcome[, 11])
+## Możesz otrzymać ostrzeżenie o wprowadzeniu wartości NA – jest to oczekiwane
+hist(outcome[, 11])

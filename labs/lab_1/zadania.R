@@ -1,5 +1,5 @@
 sessionInfo()
 install.packages("swirl", dependencies=TRUE)
 library(swirl)
-install_course_zip("Lab_2.zip")
+install_course_zip("Lab1.zip")
 swirl()
